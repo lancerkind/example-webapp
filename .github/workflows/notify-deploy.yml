@@ -1,0 +1,23 @@
+name: Notify Infrastructure Repo
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger infrastructure deployment
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.INFRA_REPO_PAT }}
+          repository: lancerkind/webapp-devops-aws  # ← Update this!
+          event-type: webapp-updated
+          client-payload: |
+            {
+              "webapp_repo": "${{ github.repository }}",
+              "webapp_ref": "${{ github.ref }}",
+              "webapp_sha": "${{ github.sha }}"
+            }
