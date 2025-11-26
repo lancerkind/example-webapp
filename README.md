@@ -1,6 +1,6 @@
 # Two layered webapp
 
-This repository contains a simple two-layered application:
+This repository contains a simple two-layered application: 
 
 1. A **webapp** (frontend) that displays the date and time on the screen.
 2. A **service** (backend) implemented in Node.js that serves the date and time via a REST API.
