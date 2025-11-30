@@ -146,7 +146,7 @@ Service:
 The following is the format used by elastic beanstalk: [environment-name].[environment-id].[region].elasticbeanstalk.com
 environment-id changes if the EBS environment is recreated.
 ---
-[Sidebar on CORS](sidebare%20on%20CORS.md)
+[Sidebar on CORS](Sidebar%20on%20CORS.md)
 
 ## Local Development
 
