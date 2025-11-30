@@ -1,0 +1,77 @@
+.packages-page {
+  padding: 2rem;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.packages-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.packages-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a3d5e;
+}
+
+.packages-header p {
+  font-size: 1rem;
+  color: #607083;
+  margin-top: 0.5rem;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.package-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.package-card:hover {
+  transform: translateY(-4px);
+}
+
+.package-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.package-info {
+  padding: 1rem 1.2rem 1.4rem;
+}
+
+.package-info h3 {
+  color: #0f2940;
+  margin-bottom: 0.5rem;
+}
+
+.package-info p {
+  color: #4d5a6b;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.book-btn {
+  width: 100%;
+  background: #ffb300;
+  color: #222;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.book-btn:hover {
+  filter: brightness(0.9);
+}
