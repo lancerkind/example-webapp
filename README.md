@@ -155,8 +155,18 @@ environment-id changes if the EBS environment is recreated.
 - Node.js ≥ 24
 - npm ≥ 10
 
-### 1. Run the Service
+### 1. Install dependencies
+
+- Service:
+  - Change directory: `cd service`
+  - Install: `npm ci` (or `npm install`)
+- Webapp:
+  - Change directory: `cd webapp`
+  - Install: `npm ci` (recommended) or `npm install`
+  - Note: `webapp/.npmrc` sets `legacy-peer-deps=true`, so installs from this folder automatically behave like `npm install --legacy-peer-deps`. If you need to pass it explicitly, run `npm install --legacy-peer-deps`.
+
+### 2. Run the Service
 The service is started in the following way: `npm run start`.
 
-### 2. Run the webapp
+### 3. Run the webapp
 The webapp is started in the following way: `npm run start`.
