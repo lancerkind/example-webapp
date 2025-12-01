@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")).render(
     <AsgardeoProvider
       clientId="GHnsoF8saSBGjmMPT4p0Iinhjc0a"
       baseUrl="https://api.asgardeo.io/t/harshareactdemo"
-      afterSignInUrl="http://localhost:5173/tours"
+      afterSignInUrl="http://asgardeo-webapp-demo-env.eba-22drhbvm.us-east-1.elasticbeanstalk.com/tours"
     >
       <App></App>
     </AsgardeoProvider>
