@@ -1,6 +1,7 @@
 import "./App.css";
 import SriLankaTourism from "./SriLankaTourism";
 import TourPackages from "./TourPackages";
+import BuildBadge from "./BuildBadge.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./Error";
@@ -21,7 +22,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <BuildBadge />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
