@@ -1,8 +1,8 @@
 # Two layered webapp 
 
-This repository contains a simple two-layered application: 
+This repository contains a two-layered application: 
 
-1. A **webapp** (frontend) that displays the date and time on the screen.
+1. A **webapp** (frontend) for a fictional tour business in Sri Lanka
 2. A **service** (backend) implemented in Node.js that serves the date and time via a REST API.
 
 This application can be manually launched on a laptop. And the webapp will be deployed via GitHub Actions by 
@@ -115,25 +115,9 @@ Note: For backward compatibility, the service also responds to `GET /health` wit
 The webapp:
 
 - Runs on **port 5173**.
-- Displays the current date and time on the screen.
-- Obtains the date/time by calling the service’s `/api/time` endpoint.
 
 ### Expected behavior
 
-- On page load (or via a button), the webapp sends a `GET` request to:
-
-  ```text
-  http://localhost:5183/api/time
-  ```
-
-- It reads the JSON response:
-  ```json
-  {
-    "now": "<ISO 8601 timestamp>"
-  }
-  ```
-- It then renders the `now` value somewhere visible on the page (e.g., a `<div>` or `<span>`).
-  - If the service is cannot be connected to or the service returns an error, the webapp should display "service unavailable".
 
 ### Configurability
 Webapp:
