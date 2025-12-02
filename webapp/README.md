@@ -1,4 +1,4 @@
-# Webapp (React + Vite)
+# Webapp (React + Vite) 
 
 This webapp is built with React and Vite. Due to third-party package peer dependency constraints, we pin npm's behavior to use legacy peer dependency resolution in this folder.
 
