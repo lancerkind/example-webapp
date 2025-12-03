@@ -10,8 +10,7 @@ createRoot(document.getElementById("root")).render(
     <AsgardeoProvider
       clientId="2zUGAC1fmUqGV7yN010RvXoyLu0a"
       baseUrl="https://api.asgardeo.io/t/harshareactdemo"
-      //afterSignInUrl="http://asgardeo-webapp-demo-env.eba-22drhbvm.us-east-1.elasticbeanstalk.com/tours"
-      afterSignInUrl={window.location.origin + "/tours"}
+      afterSignInUrl="http://asgardeo-webapp-demo-env.eba-3kygcmpr.us-east-1.elasticbeanstalk.com/tours"
       tokenValidation={{ idToken: { validate: false } }}
     >
       <App></App>
